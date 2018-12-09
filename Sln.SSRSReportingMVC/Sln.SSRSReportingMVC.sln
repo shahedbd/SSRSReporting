@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSRSReportingMVC", "SSRSReportingMVC\SSRSReportingMVC.csproj", "{54D4FAEB-0D02-440A-9DB9-441053ABEADD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54D4FAEB-0D02-440A-9DB9-441053ABEADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D4FAEB-0D02-440A-9DB9-441053ABEADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D4FAEB-0D02-440A-9DB9-441053ABEADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D4FAEB-0D02-440A-9DB9-441053ABEADD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B54711D8-4076-4D76-8314-D2B3194B155C}
+	EndGlobalSection
+EndGlobal

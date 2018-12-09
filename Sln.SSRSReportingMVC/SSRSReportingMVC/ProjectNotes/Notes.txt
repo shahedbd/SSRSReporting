@@ -1,0 +1,20 @@
+﻿
+
+Install-Package PagedList.Mvc -Version 4.5.0
+Install-Package ReportViewerForMvc -Version 1.1.1
+
+
+Problem: The definition of this report is not valid or supported by this version of Reporting Services. The report definition may have been created with a later version of Reporting Services, or contain content that is not well-formed or not valid based on Reporting Services schemas
+https://stackoverflow.com/questions/35922626/error-while-uploading-a-report
+Install-Package Microsoft.ReportingServices.ReportViewerControl.WinForms
+
+
+
+RDLC Notes:
+You need to make sure your RDLC Report have :
+01. ConsumeContainerWhiteSpace = true (open by click F4)
+02. Report Body Size <= Page Size+margin Size. (open by Ctrl + Alt + D)
+
+
+
+

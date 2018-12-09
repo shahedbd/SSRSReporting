@@ -1,0 +1,115 @@
+﻿@model PagedList.IPagedList<SSRSReportingMVC.Models.UserDetailsInfo>
+@using PagedList.Mvc;
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="form-group">
+    <div class="col-md-8 text-right ">
+        <label class="label-control"></label>
+    </div>
+    <div class="col-md-4 text-right">
+        @*@Html.ActionLink("Demand Report", "PreviewDemandReport", null, new { target = "_blank" })*@
+        <a href="@Url.Action("PreviewUserDetailsInfoReport", "UserDetailsInfoes")" class="btn btn-danger">
+            Preview User Details Info Report
+            <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+        </a>
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            <span>Identity ID</span>
+        </th>
+        <th>
+            <span>Email</span>
+        </th>
+        <th>
+            <span>First Name</span>
+        </th>
+        <th>
+            <span>Last Name</span>
+        </th>
+        <th>
+            <span>NID</span>
+        </th>
+        <th>
+            <span>Country</span>
+        </th>
+        <th>
+            <span>Creation User</span>
+        </th>
+        <th>
+            <span>Creation Date Time</span>
+        </th>
+        <th>
+            <span>Last Updat User</span>
+        </th>
+        <th>
+            <span>Last UpdateDate Time</span>
+        </th>
+        <th>
+            <span>Status</span>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdentityID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreationUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreationDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdateUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdateDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<br />
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+    <br />

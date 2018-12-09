@@ -1,0 +1,9 @@
+﻿@using ReportViewerForMvc;
+@{
+    ViewBag.Title = "Report User Details Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Report: User Details Info</h2>
+
+@Html.ReportViewer(ViewBag.RVUserDetailsInfo as Microsoft.Reporting.WebForms.ReportViewer)

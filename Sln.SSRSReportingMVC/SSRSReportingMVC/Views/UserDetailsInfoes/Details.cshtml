@@ -1,0 +1,106 @@
+﻿@model SSRSReportingMVC.Models.UserDetailsInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserDetailsInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdentityID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdentityID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdateUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdateUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdateDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdateDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
