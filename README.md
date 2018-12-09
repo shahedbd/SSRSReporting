@@ -21,4 +21,4 @@
 
 
 ## Report Sample:
-
+![Report Sample](https://github.com/shahedbd/SSRSReporting/blob/master/Sln.SSRSReportingMVC/SSRSReportingMVC/ProjectNotes/ReportUserUetailsInfo.png)
